@@ -1,0 +1,32 @@
+.wrapper {
+display: grid;
+grid-template-columns: 300px 1fr;
+grid-template-rows: auto;
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+
+grid-template-areas: 
+"banner banner"
+"nav main"
+"footer footer";
+
+}
+
+/* Grid areas */
+
+.banner { grid-area: banner; 
+background-color: yellow;}
+
+.nav { grid-area: nav; 
+background-color: red;}
+
+.main { grid-area: main; 
+background-color: green;}
+
+.footer { grid-area: footer; 
+background-color: blue;}
+
+/* Common div formatting */
+.common {
+    padding: 20px;
+}
